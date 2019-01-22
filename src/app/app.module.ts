@@ -20,6 +20,7 @@ import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.mo
 import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.module';
+import { CartolaProvider } from '../providers/cartola/cartola';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MoovieProvider
+    MoovieProvider,
+    CartolaProvider
   ]
 })
 export class AppModule {}
